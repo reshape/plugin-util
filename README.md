@@ -108,6 +108,8 @@ Output:
 <p>after</p>
 ```
 
+You can also return a promise from either function and it will work fine.
+
 #### `validateNode(node)`
 
 Given a single reshape AST node, checks it for formatting errors. Example:

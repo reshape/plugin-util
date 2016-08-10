@@ -42,6 +42,23 @@ test('modifyNodes errors when invalid return node provided', (t) => {
     .catch((err) => t.truthy(err.toString() === 'Error: invalid replacement node\nFrom: plugin-util\n\nNode: "foo"'))
 })
 
+test('modifyNodes works with promises', (t) => {
+  function plugin (tree) {
+    return util.modifyNodes(tree, (n) => {
+      return new Promise((resolve) => resolve(n.name === 'p'))
+    }, (node) => {
+      return new Promise((resolve) => {
+        node.content[0].content = 'replaced!'
+        resolve(node)
+      })
+    })
+  }
+
+  return reshape({ plugins: plugin })
+    .process(readFileSync(path.join(fixtures, 'basic.html'), 'utf8'))
+    .then((res) => t.truthy(res.output() === '<div class="wow">\n  <p>replaced!</p>\n</div>\n'))
+})
+
 test('validateNode', (t) => {
   util.validateNode({
     type: 'tag',
