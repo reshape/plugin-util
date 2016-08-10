@@ -8,10 +8,11 @@
   },
   "bugs": "https://github.com/reshape/plugin-util/issues",
   "devDependencies": {
-    "ava": "0.15.x",
+    "ava": "^0.16.0",
     "coveralls": "2.x",
-    "nyc": "6.x",
-    "reshape": "reshape/reshape",
+    "nyc": "^7.1.0",
+    "reshape": "0.2.0",
+    "snazzy": "^4.0.1",
     "standard": "7.x"
   },
   "engines": {
@@ -22,9 +23,9 @@
   "main": "lib",
   "repository": "reshape/plugin-util",
   "scripts": {
-    "coverage": "nyc ava --reporter html",
-    "coveralls": "nyc --reporter=lcov ava && cat ./coverage/lcov.info | coveralls",
-    "lint": "standard",
-    "test": "ava"
+    "coverage": "nyc ava && nyc report --reporter=html && open ./coverage/index.html",
+    "coveralls": "nyc report --reporter=text-lcov | coveralls",
+    "pretest": "standard | snazzy",
+    "test": "nyc ava"
   }
 }
