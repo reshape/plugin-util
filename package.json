@@ -1,0 +1,30 @@
+{
+  "name": "reshape-plugin-util",
+  "description": "utilities for reshape plugins",
+  "version": "0.0.0",
+  "author": "Jeff Escalante",
+  "ava": {
+    "verbose": "true"
+  },
+  "bugs": "https://github.com/reshape/plugin-util/issues",
+  "devDependencies": {
+    "ava": "0.15.x",
+    "coveralls": "2.x",
+    "nyc": "6.x",
+    "reshape": "reshape/reshape",
+    "standard": "7.x"
+  },
+  "engines": {
+    "node": ">= 6.0.0"
+  },
+  "homepage": "https://github.com/reshape/plugin-util",
+  "license": "MIT",
+  "main": "lib",
+  "repository": "reshape/plugin-util",
+  "scripts": {
+    "coverage": "nyc ava --reporter html",
+    "coveralls": "nyc --reporter=lcov ava && cat ./coverage/lcov.info | coveralls",
+    "lint": "standard",
+    "test": "ava"
+  }
+}
