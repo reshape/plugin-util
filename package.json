@@ -27,5 +27,8 @@
     "coveralls": "nyc report --reporter=text-lcov | coveralls",
     "pretest": "standard | snazzy",
     "test": "nyc ava"
+  },
+  "dependencies": {
+    "when": "^3.7.7"
   }
 }
