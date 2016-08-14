@@ -10,7 +10,7 @@
   "devDependencies": {
     "ava": "^0.16.0",
     "coveralls": "2.x",
-    "nyc": "^7.1.0",
+    "nyc": "^8.1.0",
     "reshape": "0.2.0",
     "snazzy": "^4.0.1",
     "standard": "7.x"
