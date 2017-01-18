@@ -11,7 +11,7 @@
     "ava": "^0.17.0",
     "coveralls": "2.x",
     "nyc": "^10.0.0",
-    "reshape": "0.4.0",
+    "reshape": "0.4.1",
     "snazzy": "^6.0.0",
     "standard": "8.6.0"
   },
