@@ -9,7 +9,7 @@
   "bugs": "https://github.com/reshape/plugin-util/issues",
   "devDependencies": {
     "ava": "^0.19.0",
-    "coveralls": "2.x",
+    "coveralls": "^3.0.0",
     "nyc": "^10.0.0",
     "reshape": "0.4.1",
     "snazzy": "^6.0.0",
