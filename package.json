@@ -8,7 +8,7 @@
   },
   "bugs": "https://github.com/reshape/plugin-util/issues",
   "devDependencies": {
-    "ava": "^0.19.0",
+    "ava": "^0.23.0",
     "coveralls": "2.x",
     "nyc": "^10.0.0",
     "reshape": "0.4.1",
