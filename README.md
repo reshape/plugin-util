@@ -30,7 +30,7 @@ const util = require('reshape-plugin-util')
 
 module.exports = function yellPlugin (tree) {
   return util.modifyNodes(tree, (node) => node.name === 'p', (node) => {
-    node.content = node.content.map((n) => n.content.toUpperCase())
+    node.content = node.content.map((n) => Object.assign(n, { content: n.content.toUpperCase() }))
     return node
   })
 }
