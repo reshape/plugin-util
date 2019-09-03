@@ -1,5 +1,7 @@
 # Reshape Plugin Util
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/reshape/plugin-util.svg)](https://greenkeeper.io/)
+
 [![npm](https://img.shields.io/npm/v/reshape-plugin-util.svg?style=flat-square)](https://npmjs.com/package/reshape-plugin-util)
 [![tests](https://img.shields.io/travis/reshape/plugin-util.svg?style=flat-square)](https://travis-ci.org/reshape/plugin-util?branch=master)
 [![dependencies](https://img.shields.io/david/reshape/plugin-util.svg?style=flat-square)](https://david-dm.org/reshape/plugin-util)
